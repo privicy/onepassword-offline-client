@@ -1,0 +1,53 @@
+{
+  "name": "@privicy/onepassword-offline-client",
+  "version": "1.0.0",
+  "description": "Library to access 1password offline web vaults.",
+  "main": "dist/onepassword.js",
+  "types": "dist/onepassword.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "prepare": "webpack && rm -r ./dist/services/",
+    "build": "webpack && rm -r ./dist/services/",
+    "start:dev": "webpack-dev-server",
+    "start:node": "webpack && node dist/onepassword.js"
+  },
+  "keywords": [
+    "1Password",
+    "offline-api",
+    "b5",
+    "api",
+    "1password-vault",
+    "1password-api",
+    "1password"
+  ],
+  "author": "Sibtain Ali",
+  "license": "MIT",
+  "dependencies": {
+    "@types/better-sqlite3": "^5.4.0",
+    "@types/buffer-xor": "^2.0.0",
+    "@types/jsbn": "^1.2.29",
+    "@types/lodash": "^4.14.138",
+    "@types/node-rsa": "^1.0.0",
+    "@types/urlsafe-base64": "^1.0.28",
+    "better-sqlite3": "^5.4.3",
+    "buffer-xor": "^2.0.2",
+    "futoin-hkdf": "^1.2.0",
+    "jsbn": "^1.1.0",
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0",
+    "node-rsa": "^1.0.5",
+    "urlsafe-base64": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "dts-bundle-webpack": "^1.0.2",
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
