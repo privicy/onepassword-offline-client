@@ -22,11 +22,7 @@ const config = {
       outputAsModuleFolder: true
     })
   ],
-  mode: "development",
-  devtool: "source-map",
-  devServer: {
-    contentBase: "./dist"
-  },
+  mode: "production",
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
